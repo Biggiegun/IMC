@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="images/favicon-16x16.png"
+      type="image/x-icon"
+    />
+    <!-- Css Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>IMC SPA - Nutricional de Colombia</title>
+  </head>
+
+  <body>
+    <div class="container-fluid col-6 col-md-6 col-xs-12">
+      <div class="row m-5 padre">
+        <div class="header col-12 text-center">
+         <strong> Nutricional de Colombia - NutricionalAPP </strong> 
+        </div>
+      </div>
+
+      <div class="row m-5">
+        <div class="menu col-12 text-center m-2 p-2">
+          <div class="calculadora p-1"><strong>CALCULADORA IMC</strong></div>
+
+          <div class="row">
+            <label for="sexo" class="data col-4">Sexo</label>
+            <div class="form-check col-4">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="genero"
+                value="Masculino"
+              />
+              <label class="form-check-label">Masculino 🧔</label>
+            </div>
+            <div class="form-check col-4">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="genero"
+                value="Femenino"
+                checked
+              />
+              <label class="form-check-label">Femenino 👩</label>
+            </div>
+          </div>
+
+          <div class="row m-1">
+            <label for="edad" class="edad col-3">Edad</label>
+            <input type="text" class="edad col-6" id="edad" />
+            <label for="edad" class="edad col-3">Años</label>
+          </div>
+
+          <div class="row m-1">
+            <label for="peso" class="peso col-3">Peso</label>
+            <input type="text" class="peso col-6" id="peso" />
+            <label for="peso" class="peso col-3">Kg</label>
+          </div>
+
+          <div class="row m-1">
+            <label for="altura" class="altura col-3">Altura</label>
+            <input type="text" class="altura col-6" id="altura" />
+            <label for="altura" class="altura col-3">Metros</label>
+          </div>
+
+          <button class="btnCalcular bg-info col-6" id="calcular">
+            Calcular IMC
+          </button>
+        </div>
+        <div class="menu col-12 text-center m-2 p-2">
+          <strong>RESULTADO</strong>
+          <div class="row text-center">
+            <h4 id="calculoIMC" class="col-12"></h4>
+            <hr />
+            <h6 class="col-12"></h6>
+          </div>
+        </div>
+
+        <div class="menu col-12 text-center m-2 p-2" id="padreEstadisticas">
+          <div class="col-12 text-center pb-2">
+            <strong>Estadísticas Usuarios</strong>
+          </div>
+          <button class="btnEstadisticas col-6 bg-info pb-2">
+            Estadisticas Usuarios
+          </button>
+          <table class="col-12" id="Usuarios"></table>
+        </div>
+      </div>
+
+      
+    </div>
+    <footer class="footer col-12 position-fixed bottom-0 text-center">
+     <strong> Contactenos - nutricionaldecolombia@nutricional.net </strong>
+    </footer>
+    <script src="SCRIPT/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+/* Styles Here, if necessary!!*/
+@import url('https://fonts.googleapis.com/css2?family=Georama&display=swap');
+
+body{
+    font-family: Georama, 'Times New Roman', Times, serif;
+    background-image: url(/images/cool-background.png);
+}
+
+.menu{
+    background-color:#DFCFBE;
+    border-radius: 0.5em;
+}
+
+footer{
+    background-color: #DFCFBE;
+    width: max-content;
+}
